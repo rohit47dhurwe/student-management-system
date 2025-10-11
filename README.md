@@ -24,3 +24,8 @@ A complete Java console application demonstrating CRUD operations for managing s
 - CRUD Operations
 - Java Collections Framework
 - Problem Solving
+
+## 🛠 Technologies Used
+- **Java** (OOP Concepts) 
+- **ArrayList** for data storage
+- **Scanner** for user input
