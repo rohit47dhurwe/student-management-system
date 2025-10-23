@@ -1,31 +1,47 @@
 # Student Management System
 
-A complete Java console application demonstrating CRUD operations for managing student records.
+This repository contains two implementations of a Student Management System:
+1. **Spring Boot REST API** - Modern web API with full CRUD operations
+2. **Java Console Application** - Classic console-based system
 
-## Features
-- ✅ Add new students with ID, name, age, and marks
-- ✅ View all students in the system  
-- ✅ Update existing student information
-- ✅ Delete students from the system
-- ✅ Input validation and error handling
+## 🚀 Spring Boot REST API
 
-## Technologies Used
-- Java (OOP Concepts)
-- ArrayList for data storage
-- Scanner for user input
+A complete RESTful API built with Spring Boot for managing student records.
 
-## How to Run
-1. Clone this repository
-2. Compile: `javac Student.java StudentManagementSystem.java`
-3. Run: `java StudentManagementSystem`
+### Features
+- ✅ **Full CRUD Operations** - Create, Read, Update, Delete students
+- ✅ **REST Endpoints** - Standard HTTP methods (GET, POST, PUT, DELETE)
+- ✅ **JSON Support** - Request/response in JSON format
+- ✅ **In-Memory Storage** - ArrayList-based data persistence
+- ✅ **Error Handling** - Proper validation and error responses
 
-## Skills Demonstrated
-- Object-Oriented Programming
-- CRUD Operations
-- Java Collections Framework
-- Problem Solving
+### API Endpoints
 
-## 🛠 Technologies Used
-- **Java** (OOP Concepts) 
-- **ArrayList** for data storage
-- **Scanner** for user input
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/students/hello` | Test endpoint |
+| GET | `/api/students` | Get all students |
+| GET | `/api/students/{id}` | Get student by ID |
+| POST | `/api/students` | Create new student |
+| PUT | `/api/students/{id}` | Update student |
+| DELETE | `/api/students/{id}` | Delete student |
+
+### Technologies Used
+- **Java 17**
+- **Spring Boot 3.4.10**
+- **Maven**
+- **REST APIs**
+- **Tomcat Embedded Server**
+
+### How to Run
+```bash
+# Clone the repository
+git clone https://github.com/rohit47dhurwe/student-management-system.git
+
+# Navigate to Spring Boot project
+cd student-api
+
+# Run the application
+mvnw.cmd spring-boot:run
+
+# Application will start on http://localhost:8080
